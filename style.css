@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f2;
+}
+
+/* HEADER BESAR */
+.big-header {
+    background: #3971b8;
+    color: white;
+    text-align: center;
+    padding: 40px 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* WEATHER PANEL */
+.weather-panel {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.weather-card {
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    border: 2px solid #3971b8;
+}
+
+.hourly-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+}
+
+.hour-card {
+    background: #333;
+    padding: 15px;
+    border-radius: 15px;
+    width: 120px;
+    text-align: center;
+    color: white;
+}
+
+.hour-card img {
+    width: 40px;
+    height: 40px;
+}
+
+/* 2 COLUMN LAYOUT */
+.two-column {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 10px auto 40px auto;
+    gap: 20px;
+}
+
+.side-card {
+    width: 50%;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid #3971b8;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+}
+
+.btn {
+    background: #3971b8;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn.danger {
+    background: #3971b8;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    border: 1px solid #999;
+    padding: 5px;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: none;
+}
+
+#weatherResult {
+    text-align: center;
+}
+
+.day-card img {
+    width: 60px;
+}
+
+.forecast-title {
+    text-align: center;
+    width: 100%;
+    display: block;
+}

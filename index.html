@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Prediksi Tanaman</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER BESAR -->
+    <header class="big-header">
+        <h1>Forecast Pertumbuhan Tanaman</h1>
+        <p>PAS Informatika Semester 1 Kelompok 4</p>
+    </header>
+
+    <!-- WEATHER SECTION -->
+    <section id="weather" class="panel weather-panel">
+        <div class="card weather-card">
+            <div style="text-align:center;">
+                <button class="btn" onclick="getWeather()">Tampilkan Cuaca Malang</button>
+            </div>
+            <h2 class="forecast-title">Ramalan Cuaca Kota Malang (6 Hari):</h2>
+            <div id="weatherResult" class="hourly-container"></div>
+        </div>
+    </section>
+
+    <!-- 2 KOLOM -->
+    <main class="two-column">
+
+        <!-- Panel Prediksi -->
+        <section id="predict" class="panel side-card">
+            <h2>Prediksi</h2>
+            <div class="card">
+
+                <label>Tinggi Awal (cm)</label>
+                <input type="number" id="tinggi_awal">
+
+                <label>Curah Hujan (mm)</label>
+                <input type="number" id="curah_hujan">
+
+                <label>Kelembapan (%)</label>
+                <input type="number" id="kelembapan">
+
+                <label>Pupuk (gram)</label>
+                <input type="number" id="pupuk">
+
+                <label>Hari</label>
+                <input type="number" id="hari">
+
+                <button class="btn" onclick="predict()">Hitung Prediksi</button>
+
+                <h3 id="result"></h3>
+            </div>
+        </section>
+
+        <!-- Panel History -->
+        <section id="history" class="panel side-card">
+            <h2>History Prediksi</h2>
+            <div class="card">
+
+                <table id="historyTable">
+                    <thead>
+                        <tr>
+                            <th>Tinggi Awal</th>
+                            <th>Curah Hujan</th>
+                            <th>Kelembapan</th>
+                            <th>Pupuk</th>
+                            <th>Hari</th>
+                            <th>Tinggi Akhir</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <button class="btn danger" onclick="clearHistory()">Hapus Semua Riwayat</button>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
